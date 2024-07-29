@@ -1,0 +1,16 @@
+.aboutMePic img {
+    width: 450px; /* Setzt die Breite des Bildes */
+    height: 450px; /* Setzt die Höhe des Bildes */
+    border-radius: 50%; /* Macht das Bild kreisrund */
+    border: 5px solid #70E61C; /* Setzt einen Rahmen um das Bild */
+    object-fit: cover; /* Stellt sicher, dass das Bild den Container vollständig ausfüllt */
+  }
+  .main{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 37px;
+  }
+
+  .aboutMeTitle{
+    font-size: 90px;
+  }
