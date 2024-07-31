@@ -1,1 +1,31 @@
-<p>contact works!</p>
+<div class="headline"><div class="line"></div>Contact</div>
+
+<div class="contactBody" >
+    <div class="contactHead">
+    <div>Got a problem to solve?</div>
+    <div> contect me throug this form, I am intereted in hearing<br> from you, knowing your ideads and contributing to your projects with my work.
+        <br> 
+        <br>need a Developer? Contact me!
+    </div>
+    </div>
+<div class="contactBox">
+    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+  
+     
+      <input class="contactName" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name">
+  
+   
+      <input class="contactMail" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+  
+     
+      <textarea #message="ngModel" class="contactMessage" [(ngModel)]="contactData.message" minlength="4" id="message" name="message" placeholder="Your message" style="height:200px"></textarea>
+      
+      @if(!message.valid && message.touched && !message.disabled){
+        <span>Please enter a message</span>
+      }
+
+      <input class="contactButton" type="submit" value="Send message :-)">
+  
+    </form>
+  </div>
+</div>

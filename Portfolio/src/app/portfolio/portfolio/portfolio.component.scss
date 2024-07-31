@@ -1,55 +1,55 @@
-.portTop{
-    font-size: 90px;
+.portTop {
+  font-size: 90px;
 }
-.portLine{
-    height: 1px;
-    background-color: #9747FF;
-    width: 507px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+
+.portLine {
+  height: 1px;
+  background-color: #9747FF;
+  width: 507px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .portBody {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px; 
-    text-align: center;
-  }
-  
-  .blockLeft,
-  .blockRight {
-    display: flex;
-    align-items: center;
-    gap: 50px; 
-    margin-bottom: 20px; 
-  }
-  
-  .blockLeft img,
-  .blockRight img {
-    width: 200px; 
-    height: auto; 
-  }
-  
-  .blockLeft {
-    justify-content: start;
-  }
-  
-  .blockRight {
-    justify-content: end;
-  }
-  
-  .blockLeft > div:first-child,
-  .blockRight > div:last-child {
-    flex-shrink: 0; 
-  }
-  
-  .blockLeft > div:not(:first-child),
-  .blockRight > div:not(:last-child) {
-    display: flex;
-    flex-direction: column; 
-    align-items: flex-start; 
-    flex: 1; 
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.blockLeft,
+.blockRight {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+.blockLeft img,
+.blockRight img {
+  width: 200px;
+  height: auto;
+}
+
+.blockLeft {
+  justify-content: start;
+}
+
+.blockRight {
+  justify-content: end;
+}
+
+.blockLeft>div:first-child,
+.blockRight>div:last-child {
+  flex-shrink: 0;
+}
+
+.blockLeft>div:not(:first-child),
+.blockRight>div:not(:last-child) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}

@@ -1,0 +1,22 @@
+.friendPic img{
+    width: 450px; 
+    height: 450px;
+    border-radius: 50%;
+    border: 5px solid #70E61C; 
+    object-fit: cover; 
+}
+.friendTextAndPic{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.friendText{
+    border: 4px solid #70E61C;
+    border-radius: 32px;
+    height: 272px;
+    width: 851px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
