@@ -1,20 +1,102 @@
-.bodySkill {
+.skillBody {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 100px;
 }
 
-.allImg  {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 88px;
-  
+.bodySkill {
+    flex: 1;
+    // overflow: hidden; 
 }
+
+.allImg {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: space-between; 
+}
+
+.allImg>div {
+    flex: 1 0 21%; 
+    text-align: center; 
+}
+.allImg img{
+    transition: transform 0.3s ease;
+}
+.allImg img:hover{
+    animation: bounce 0.6s ease forwards;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0); // Startposition
+  }
+  50% {
+    transform: translateY(-10px); // Hebt das Bild um 10px an
+  }
+  100% {
+    transform: translateY(0); // Endposition
+  }
+}
+
 
 .skillText {
+    flex: 1;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+
+
+}
+
+.mySkills {
+    font-size: 90px; 
+    font-weight: 700;
+}
+
+.line {
+    height: 4px;
+    background-color: #9747FF;
+    width: 70px;
+    margin-left: 32px;
+
+
+}
+
+button {
+    margin-top: 20px; 
+}
+
+.MySkillWithLine {
+    display: flex;
     align-items: center;
-    
+    justify-content: flex-end;
+}
+
+.looking {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.textInText {
+    padding-right: 100px;
+    text-align: right;
+}
+
+.buttonGet {
+    background-color: #70E61C;
+    height: 60px;
+    width: 200px;
+    font-size: 23px;
+    font-weight: 400;
+    color: white;
+    border-radius: 10px;
+    margin-right: 100px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+.buttonGet:hover {
+    background-color: #9747FF;
+    transform: scale(1.3);
 }

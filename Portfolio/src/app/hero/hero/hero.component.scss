@@ -5,34 +5,27 @@
     right: 0;
     bottom: 0;
     background-image: url('/assets/img/28. Hero Background.png');
-    background-position: left 300px;
+    background-position: left 200px;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 3;
-
-
+   
 }
 
 .body {
     display: flex;
     max-width: 1140px;
     margin: 0 auto;
-
 }
 
 .pink {
     z-index: 1;
     margin-left: 150px;
-
-
-
 }
 
 .purple {
     z-index: 1;
     position: relative;
-
-
 }
 
 .mePic {
@@ -40,21 +33,20 @@
     position: absolute;
     height: auto;
     width: 700px;
-
+    margin-top: 20px;
 }
 
 .image-container {
     // position: relative;
     /* Oder absolute, je nach Bedarf */
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 230px);
     // top: 106px;
     // left: 47px;
     background-image: url("/assets/img/33. Purple shadow Footer.png"), url("/assets/img/GReen shadow.svg");
     background-size: 80%, 100%;
     background-repeat: no-repeat, no-repeat;
-    background-position: -0px 0px, 50px 20px;
-
+    background-position: -0px 0px, 10px 10px;
 }
 
 .image-container img {
@@ -70,7 +62,6 @@
     align-items: center;
     justify-content: center;
     z-index: 5;
-
 }
 
 .heroIAm {
@@ -118,13 +109,18 @@
     justify-content: flex-start;
     align-items: center;
     left: 0;
-
+    z-index: 5;
+    position: relative;
 }
 
 .heroSozial img {
     margin: 20px;
+    transition: transform 0.3s ease-in-out; 
 }
 
+.heroSozial img:hover {
+    transform: scale(1.9);
+}
 .backgroundSlice img {
     display: flex;
     justify-content: center;
@@ -132,3 +128,5 @@
     width: 1280px;
     height: 970px;
 }
+
+

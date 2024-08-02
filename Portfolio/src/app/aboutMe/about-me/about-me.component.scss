@@ -1,16 +1,54 @@
 .aboutMePic img {
-    width: 450px; /* Setzt die Breite des Bildes */
-    height: 450px; /* Setzt die Höhe des Bildes */
-    border-radius: 50%; /* Macht das Bild kreisrund */
-    border: 5px solid #70E61C; /* Setzt einen Rahmen um das Bild */
-    object-fit: cover; /* Stellt sicher, dass das Bild den Container vollständig ausfüllt */
+    width: 450px; 
+    height: 450px;
+    border-radius: 50%;
+    border: 5px solid #70E61C; 
+    object-fit: cover; 
+   
   }
   .main{
     display: flex;
     justify-content: space-between;
     padding-left: 37px;
+    background-image: url("/assets/img/30. Purple shadow about me (1).png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 1200px -30px;
+    background-size: 40%;
+    position: relative;
+    z-index: 150;
+
   }
 
   .aboutMeTitle{
     font-size: 90px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
+.line{
+  height: 4px;
+  width: 270px;
+  background-color: #70E61C;
+}
+.aboutMePic{
+  display: flex;
+  align-items: center;
+  z-index: 5;
+  position: relative;
+}
+.meDis{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.meDis img{
+  height: 50px;
+  width: 50px;
+  transition: transform 0.3s ease-in-out; 
+}
+.meDis img:hover{
+  transform: scale(1.9);
+}
+.meFirstPart{
+  margin-bottom: 20px;
+}
