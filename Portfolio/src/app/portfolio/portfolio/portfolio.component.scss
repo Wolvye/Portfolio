@@ -1,14 +1,28 @@
 .portTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
   font-size: 90px;
+  font-weight: 700;
+  gap: 25px;
+}
+
+.lineSmall {
+  height: 4px;
+  background-color: #9747FF;
+  width: 100px;
+  flex-shrink: 0;
 }
 
 .portLine {
-  height: 1px;
+  height: 4px;
   background-color: #9747FF;
-  width: 507px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  position: absolute;
+  left: calc(50% + 250px); /* Adjust to stop 25px before Portfolio */
+  right: 0;
+  margin-left: 25px; /* Optionaler Abstand links */
 }
 
 .portBody {
@@ -25,11 +39,13 @@
   align-items: center;
   gap: 50px;
   margin-bottom: 20px;
+  height: 340px;
+  width: 1170px;
 }
 
 .blockLeft img,
 .blockRight img {
-  width: 200px;
+  width: 620px;
   height: auto;
 }
 
@@ -41,13 +57,13 @@
   justify-content: end;
 }
 
-.blockLeft>div:first-child,
-.blockRight>div:last-child {
+.blockLeft > div:first-child,
+.blockRight > div:last-child {
   flex-shrink: 0;
 }
 
-.blockLeft>div:not(:first-child),
-.blockRight>div:not(:last-child) {
+.blockLeft > div:not(:first-child),
+.blockRight > div:not(:last-child) {
   display: flex;
   flex-direction: column;
   align-items: flex-start;

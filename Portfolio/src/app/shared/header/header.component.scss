@@ -5,15 +5,15 @@
     height: 110px;
     padding-left: 37px;
     padding-right: 37px;
-    
-    position:sticky;
+
+    position: sticky;
     z-index: 1000;
 
 }
 
 .bulletPoints {
     display: flex;
-    
+
 }
 
 .bulletPoints>a {
@@ -25,11 +25,9 @@
 .bulletPoints>a:last-child {
     margin-right: 0;
 }
-.alain{
+
+.alain {
     font-size: 60px;
     padding-left: 4%;
 }
 
-
-
- 

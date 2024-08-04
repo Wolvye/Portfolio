@@ -35,3 +35,22 @@
 .footerCopyR{
     font-size: 28px;
 }
+
+
+.heroSozial {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    left: 0;
+    z-index: 5;
+    position: relative;
+}
+
+.heroSozial img {
+    margin: 20px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.heroSozial img:hover {
+    transform: scale(1.9);
+}
