@@ -51,11 +51,11 @@
 }
 
 .image-container img {
-    width: 646px;
+    width: 500px;
     height: auto;
     object-fit: cover;
-    /* Alternativ: contain, fill, etc. je nach gewünschtem Verhalten */
     position: absolute;
+
 }
 
 .heroName {

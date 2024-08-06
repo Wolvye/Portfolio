@@ -1,9 +1,24 @@
-
 <div class="friendTextAndPic">
-<div class="friendText">
-<div class="friendTextInner">Text hier von Freunden</div>
-<div> strich hier mit Name</div>
+    <div class="friendText">
+        <div class="friendTextInner" [innerHTML]="friendsArray[currentIndex].text">
+            <div class="break">
+                <div class="lineText"></div>Özkan Sarikaya
+            </div>
+        </div>
+
+    </div>
+    <div class="friendPic"><img [src]="friendsArray[currentIndex].imgPath" alt="">
+        <div class="line"></div>
+    </div>
 </div>
-<div class="friendPic"><img src="./assets/img/friend.jpg" alt=""></div>
+<div class="ArrowBox">
+<div class="Arrows">
+    <img src="./assets/img/left.png" (click)="prevFriend()" class="buttonLeft default-image">
+    <img src="./assets/img/bigLeft.png" (click)="prevFriend()" class="buttonLeft hover-image">
+   
 </div>
-<div><button>LEFT</button> POINT POINT <button>RIGHT</button></div>
+<div class="Arrows">
+    <img src="./assets/img/right.png" (click)="nextFriend()" class="buttonRight default-image">
+    <img src="./assets/img/bigRight.png" (click)="nextFriend()" class="buttonRight hover-image">
+</div>
+</div>

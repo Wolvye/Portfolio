@@ -1,88 +1,127 @@
 .contactBody {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 300px;
+    padding-top: 50px;
+}
+.contactHead{
+    margin-bottom: 450px;
 }
 
 .headline {
-    font-size: 90px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    gap: 40px;
+}
+
+.headlineContact {
+    font-size: 90px;
+    font-weight: 700;
+
 }
 
 .line {
     height: 4px;
     background-color: #9747FF;
-    width: 535px;
+    width: calc(50% - 40px);
     border-radius: 4px solid;
 }
 
-// /* Style inputs with type="text", select elements and textareas */
-//  input[type=text], select, textarea {
-//     width: 100%; /* Full width */
-//     padding: 12px; /* Some padding */ 
-//     border: 1px solid #ccc; /* Gray border */
-//     border-radius: 4px; /* Rounded borders */
-//     box-sizing: border-box; /* Make sure that padding and width stays in place */
-//     margin-top: 6px; /* Add a top margin */
-//     margin-bottom: 16px; /* Bottom margin */
-//     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-//   }
-
-//   /* Style the submit button with a specific background color etc */
-//   input[type=submit] {
-//     background-color: #04AA6D;
-//     color: white;
-//     padding: 12px 20px;
-//     border: none;
-//     border-radius: 4px;
-//     cursor: pointer;
-//   }
-
-//   /* When moving the mouse over the submit button, add a darker green color */
-//   input[type=submit]:hover {
-//     background-color: #45a049;
-//   }
-
-/* Add a background color and some padding around the form */
-// .container {
-//     border-radius: 5px;
-//     background-color: #f2f2f2;
-//     padding: 20px;
-// }
-
 .contactName,
-.contactMail{
-    height: 20px;
+.contactMail {
+    height: 40px;
     width: 600px;
     border: 1px solid #9747FF;
     border-radius: 10px;
-    
+    background-color: transparent;
+    &:hover {
+        border: 1px solid #70E61C;
+    }
 }
 
-.contactMessage{
+.contactMessage {
     width: 600px;
     height: 200px;
     border: 1px solid #9747FF;
     border-radius: 10px;
-
+    background-color: transparent;
+    &:hover {
+        border: 1px solid #70E61C;
+    }
 }
-.contactBox form{
+
+.contactBox form {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 32px;
 }
-.contactBody {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.contactButton{
+
+.contactButton {
     width: 250px;
     height: 60px;
     border-radius: 10px;
     font-size: large;
+}
+
+.problem {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.problemContent {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.checkBox {
+    display: none;
+}
+
+.checkBox-container {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkmark {
+    position: relative;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border: 2px solid #70E61C; 
+    border-radius: 4px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+
+.checkBox:checked + .checkmark {
+    background-color: #70E61C; 
+    border-color: #70E61C; 
+}
+
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 7px;
+    top: 4px;
+    width: 6px;
+    height: 14px;
+    border: solid white; 
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.checkBox:checked + .checkmark:after {
+    display: block;
+}
+
+.checkBoxText{
+   margin-left: 30px;
 }

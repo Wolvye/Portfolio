@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
-
 @Component({
   selector: 'app-contact',
   standalone: true,
@@ -9,6 +8,8 @@ import { FormsModule, NgForm } from '@angular/forms';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+  isChecked = false; 
+  isCheckedStandalone = false;
 
   contactData = {
     name: "",
