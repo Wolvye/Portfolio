@@ -1,3 +1,4 @@
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -5,10 +6,10 @@
     height: 110px;
     padding-left: 37px;
     padding-right: 37px;
-
+    top: 0;
     position: sticky;
     z-index: 1000;
-
+    background-color: #141D2F;
 }
 
 .bulletPoints {

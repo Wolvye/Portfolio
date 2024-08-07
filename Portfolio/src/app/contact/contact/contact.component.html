@@ -19,14 +19,11 @@
   <div class="contactBox">
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
-
       <input class="contactName" [(ngModel)]="contactData.name" type="text" id="name" name="name"
         placeholder="Your name">
 
-
       <input class="contactMail" [(ngModel)]="contactData.email" type="email" id="email" name="email"
         placeholder="Your email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-
 
       <textarea #message="ngModel" class="contactMessage" [(ngModel)]="contactData.message" minlength="4" id="message"
         name="message" placeholder="Your message" style="height:200px"></textarea>
@@ -41,7 +38,7 @@
             <input type="checkbox" [(ngModel)]="isChecked" name="myCheckbox" class="checkBox">
             <span class="checkmark"></span>
             <div class="checkBoxText">I’ve read the privacy policy and agree to the processing of my data as
-            outlined.</div> 
+              outlined.</div>
           </label>
 
         </label>

@@ -1,4 +1,4 @@
-.portTop {
+   .portTop {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -135,4 +135,14 @@
 .buttonGit {
   background: none;
   border: 1px solid #70E61C;
+}
+
+@media screen and (max-width: 1480px)
+{
+  .blockLeft,
+  .blockRight{
+    width: 1000px;
+    gap: 0;
+
+  }
 }

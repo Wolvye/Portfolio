@@ -1,55 +1,68 @@
 .aboutMePic img {
-    width: 450px; 
-    height: 450px;
-    border-radius: 50%;
-    border: 5px solid #70E61C; 
-    object-fit: cover; 
-    position: 1;
-   
-  }
-  .main{
-    display: flex;
-    justify-content: space-between;
-    padding-left: 37px;
-    background-image: url("/assets/img/30. Purple shadow about me (1).png");
-    background-repeat: no-repeat, no-repeat;
-    background-position: 1200px -10px;
-    background-size: 30%;
-    position: relative;
-    z-index: 150;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  border: 5px solid #70E61C;
+  object-fit: cover;
+  position: 1;
 
-  }
+}
 
-  .aboutMeTitle{
-    font-size: 90px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-.line{
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 37px;
+  background-image: url("/assets/img/30. Purple shadow about me (1).png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 1200px -10px;
+  background-size: 30%;
+  position: relative;
+  z-index: 150;
+}
+
+.aboutMeTitle {
+  font-size: 90px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.line {
   height: 4px;
   width: 270px;
   background-color: #70E61C;
 }
-.aboutMePic{
+
+.aboutMePic {
   display: flex;
   align-items: center;
   z-index: 5;
   position: relative;
 }
-.meDis{
+
+.meDis {
   display: flex;
   gap: 20px;
   margin-bottom: 20px;
   align-items: center;
 }
-.meDis img{
+
+.meDis img {
   height: 50px;
   width: 50px;
-  transition: transform 0.3s ease-in-out; 
+  transition: transform 0.3s ease-in-out;
 }
-.meDis img:hover{
+
+.meDis img:hover {
   transform: scale(1.9);
 }
-.meFirstPart{
+
+.meFirstPart {
   margin-bottom: 20px;
 }
+@media screen and (max-width: 1080px){
+.line{
+  width: auto;
+}
+
+}
+
