@@ -1,4 +1,3 @@
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -32,3 +31,26 @@
     padding-left: 4%;
 }
 
+.burger {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1060px) {
+    .btn {
+        display: none;
+    }
+
+    .burger {
+        display: inline;
+    }
+
+    .btnMenu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+}
