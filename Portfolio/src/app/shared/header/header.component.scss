@@ -1,3 +1,11 @@
+.d-none {
+    display: none;
+}
+
+.d-inline {
+    display: inline;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -13,7 +21,6 @@
 
 .bulletPoints {
     display: flex;
-
 }
 
 .bulletPoints>a {
@@ -35,8 +42,10 @@
     display: none;
 }
 
-
-
+.d-none{
+    display: none;
+}
+.btnMenu{display: none;}
 @media screen and (max-width: 1060px) {
     .btn {
         display: none;
@@ -44,13 +53,28 @@
 
     .burger {
         display: inline;
+        z-index: 5;
+        position: relative;
     }
 
     .btnMenu {
         display: flex;
         align-items: center;
         justify-content: center;
-
-
+        position: fixed;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        background-color: rgba(44, 42, 42, 0.9);
+        font-size: 90px;
+        z-index: 5;
+        gap: 50px;
+        >a{
+            color: white;
+        }
+                
     }
 }

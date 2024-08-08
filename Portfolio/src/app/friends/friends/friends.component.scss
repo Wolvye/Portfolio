@@ -99,3 +99,22 @@
   }
 
  
+
+  @media screen and (max-width: 1080px){
+    .friendTextAndPic{
+      flex-direction: column-reverse;
+    }
+    .line{
+      display: none;
+    }
+    .friendText{
+      height: 400px;
+      width: 750px;
+    }
+  }
+  @media screen and (max-width: 780px){
+    .friendText{
+      height: 300px;
+      width: 550px;
+    }
+  }

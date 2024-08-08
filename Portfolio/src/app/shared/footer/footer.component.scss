@@ -25,7 +25,7 @@
 }
 
 .footerTitle {
-    font-size: 40px;
+    font-size: 60px;
     padding-left: 8%;
 }
 
@@ -53,4 +53,29 @@
 
 .heroSozial img:hover {
     transform: scale(1.9);
+}
+
+.impressum,
+.impressum2{
+    font-size: 32px;
+}
+.impressum2{
+    display: none;
+}
+@media screen and (max-width: 700px){
+    .footerContent{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .impressum{
+        display: none;
+    }
+    .impressum2{
+        display: inline;
+    }
+    .footerTitle{
+        padding-left: 0;
+    }
 }

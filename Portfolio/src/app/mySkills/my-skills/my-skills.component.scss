@@ -71,17 +71,20 @@ button {
     justify-content: flex-end;
 }
 
-.looking {
+.looking, 
+.looking2, {
     font-size: 32px;
     font-weight: 700;
 }
 
-.textInText {
+.textInText, 
+.textInText2 {
     padding-right: 100px;
     text-align: right;
 }
 
-.buttonGet {
+.buttonGet,
+.buttonGet2 {
     background-color: #70E61C;
     height: 60px;
     width: 200px;
@@ -114,4 +117,25 @@ button {
     background-repeat: no-repeat;
     background-position:  10px 10px;
    
+}
+.d-none{
+    display: none;
+}
+
+@media screen and (max-width: 1080px){
+    .skillBody{
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    .smallText{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .looking,
+    .textInText,
+    .buttonGet{
+        display: none;
+    }
 }

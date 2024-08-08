@@ -9,7 +9,8 @@
     background-size: 30%;
     background-position: -50px;
 }
-.contactHead{
+
+.contactHead {
     margin-bottom: 450px;
 }
 
@@ -40,6 +41,7 @@
     border: 1px solid #9747FF;
     border-radius: 10px;
     background-color: transparent;
+
     &:hover {
         border: 1px solid #70E61C;
     }
@@ -51,6 +53,7 @@
     border: 1px solid #9747FF;
     border-radius: 10px;
     background-color: transparent;
+
     &:hover {
         border: 1px solid #70E61C;
     }
@@ -97,15 +100,15 @@
     height: 24px;
     width: 24px;
     background-color: transparent;
-    border: 2px solid #70E61C; 
+    border: 2px solid #70E61C;
     border-radius: 4px;
     transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 
-.checkBox:checked + .checkmark {
-    background-color: #70E61C; 
-    border-color: #70E61C; 
+.checkBox:checked+.checkmark {
+    background-color: #70E61C;
+    border-color: #70E61C;
 }
 
 
@@ -117,15 +120,28 @@
     top: 4px;
     width: 6px;
     height: 14px;
-    border: solid white; 
+    border: solid white;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
 }
 
-.checkBox:checked + .checkmark:after {
+.checkBox:checked+.checkmark:after {
     display: block;
 }
 
-.checkBoxText{
-   margin-left: 30px;
+.checkBoxText {
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 1080px) {
+    .contactBody {
+        gap: 0;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .contactHead {
+        margin-bottom: 50px;
+
+    }
 }

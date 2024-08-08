@@ -1,12 +1,22 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-header',
-  standalone: true,
-  imports: [],
+  standalone:true,
+  imports: [CommonModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  isHidden: boolean = false;
 
+  
+  toggleVisibility(){
+    if (this.isHidden==false) {
+      this.isHidden=true;
+    }else{
+      this.isHidden=false;
+    }
+  }
 }

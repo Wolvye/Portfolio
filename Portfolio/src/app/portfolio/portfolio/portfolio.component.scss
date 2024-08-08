@@ -22,10 +22,8 @@
   background-color: #9747FF;
   position: absolute;
   left: calc(50% + 325px);
-  /* Adjust to stop 25px before Portfolio */
   right: 0;
   margin-left: 25px;
-  /* Optionaler Abstand links */
 }
 
 .portBody {
@@ -137,12 +135,86 @@
   border: 1px solid #70E61C;
 }
 
-@media screen and (max-width: 1480px)
-{
+.polo2{
+  display: none;
+}
+@media screen and (max-width: 1480px){
+
   .blockLeft,
   .blockRight{
     width: 1000px;
-    gap: 0;
+    gap: 0px;
+    height: auto;
+    flex-direction: column;
 
   }
+  .polo2{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 1000px;
+
+  }
+  .blockRight,
+  .polo1{
+    display: none;
+  }
+}
+@media screen and (max-width: 1080px){
+
+}
+.blockLeft,
+.blockRight{
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    width: 750px;
+  
+}
+
+
+.lineSmall{
+  width: 200px;
+
+}
+.portLine{
+  display: none;
+}
+.portTop{
+  justify-content:flex-start;
+}
+
+@media screen and (max-width: 780px){
+  .buttonLive,
+  .buttonGit {
+    height: 40px;
+    width: 90px;
+    font-size: 16px;
+   
+  }
+  .portBody{
+    width: 300px;
+  }
+  .buttonDiv{
+    gap: 20px;
+  }
+.lineSmall{
+  width: 50px;
+}
+.blockLeft img,
+.blockRight img{
+  width: 250px;
+}
+  .blockLeft ,
+.blockRight {
+  width: 250px;
+
+}
+.polo1{
+  display: none;
+}
+.polo2{
+  display: inline;
+}
 }

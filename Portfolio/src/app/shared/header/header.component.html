@@ -1,17 +1,16 @@
 <div class="header">
     <div class="alain">Alain</div>
-
     <nav class="bulletPoints">
-
-        <img  class="burger" src="./assets/img/burger.png" alt="">
-
+        <img class="burger" src="./assets/img/burger.png" alt="" (click)="toggleVisibility()">
         <a class="btn btn-two" href="#aboutMeTitle">About me</a>
         <a class="btn btn-two" href="#skills">Skills</a>
         <a class="btn btn-two" href="#portfolio">Portfolio</a>
     </nav>
 </div>
-<div class="btnMenu d-none">
+<div [ngClass]="{'d-none': isHidden}">
+<div class="btnMenu d-none" >
     <a class="btn2" href="#aboutMeTitle">About me</a>
     <a class="btn2" href="#skills">Skills</a>
     <a class="btn2" href="#portfolio">Portfolio</a>
+</div>
 </div>
