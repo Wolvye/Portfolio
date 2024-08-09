@@ -150,15 +150,18 @@ button {
         font-size: 60px;
     }
     .line{
-        width: 50px;
+    display: none;
     }
     .MySkillWithLine{
-        width: 350px;
+        width: 300px;
         align-items: center;
         justify-content: center;
     }
     .allImg img{
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
+    }
+    .allImg{
+        gap: 2px;
     }
 }
