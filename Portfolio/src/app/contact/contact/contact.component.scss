@@ -144,4 +144,48 @@
         margin-bottom: 50px;
 
     }
+    .contactName{
+        width: 400px;
+    }
+    .contactMail{
+        width: 400px;
+    }
+    .contactMessage{
+        width: 400px;
+    }
+
+}
+@media screen and (max-width: 750px){
+    .headlineContact{
+        font-size: 60px;
+    }
+    .problem{
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 650px){
+    .headlineContact{
+        font-size: 40px;
+    }
+    .problem{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .contactName{
+        width: 350px;
+    }
+    .contactMail{
+        width: 350px;
+    }
+    .contactMessage{
+        width: 350px;
+    }
+    .line{
+    width: 50px;    
+    }
+    .checkBox-container{
+        
+    }
 }

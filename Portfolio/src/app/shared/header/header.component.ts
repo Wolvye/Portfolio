@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  isHidden: boolean = false;
+  isHidden: boolean = true;
 
   
   toggleVisibility(){

@@ -118,3 +118,22 @@
       width: 550px;
     }
   }
+  @media screen and (max-width: 650px){
+    .friendText{
+      height: 200px;
+      width: 400px;
+    }
+    .friendTextInner{
+      font-size: 12px;
+    }
+    .friendPic img{
+      height: 300px;
+      width: 300px;
+    }
+  }
+  @media screen and (max-width: 650px){
+    .friendText{
+      height: 200px;
+      width: 350px;
+    }
+  }

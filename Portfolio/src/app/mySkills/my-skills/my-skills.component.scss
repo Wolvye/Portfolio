@@ -139,3 +139,26 @@ button {
         display: none;
     }
 }
+@media screen and (max-width: 630px){
+    .mySkills{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .mySkills{
+        font-size: 60px;
+    }
+    .line{
+        width: 50px;
+    }
+    .MySkillWithLine{
+        width: 350px;
+        align-items: center;
+        justify-content: center;
+    }
+    .allImg img{
+        height: 50px;
+        width: 50px;
+    }
+}

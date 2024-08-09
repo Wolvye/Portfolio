@@ -59,13 +59,26 @@
 .meFirstPart {
   margin-bottom: 20px;
 }
-@media screen and (max-width: 1080px){
-.line{
-  width: auto;
-}
-.aboutMePic{
-  display: none;
-}
+
+@media screen and (max-width: 1080px) {
+  .line {
+    width: auto;
+  }
+
+  .aboutMePic {
+    display: none;
+  }
 
 }
 
+@media screen and (max-width: 600px) {
+  .aboutMeTitle {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .aboutMeTitle {
+    font-size: 60px;
+  }
+}

@@ -1,220 +1,240 @@
-   .portTop {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  position: relative;
-  font-size: 90px;
-  font-weight: 700;
-  gap: 25px;
-}
+  .portTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    font-size: 90px;
+    font-weight: 700;
+    gap: 25px;
+  }
 
-.lineSmall {
-  height: 4px;
-  background-color: #9747FF;
-  width: 250px;
-  flex-shrink: 0;
-
-}
-
-.portLine {
-  height: 4px;
-  background-color: #9747FF;
-  position: absolute;
-  left: calc(50% + 325px);
-  right: 0;
-  margin-left: 25px;
-}
-
-.portBody {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  text-align: center;
-  background-image: url('/assets/img/32 Purple shadow portfolio.png');
-  background-repeat: no-repeat;
-  background-position: 50px 100px;
-  z-index: 1;
-  background-size: 40%;
-}
-
-.blockLeft,
-.blockRight {
-  display: flex;
-  align-items: center;
-  gap: 100px;
-  margin-bottom: 20px;
-  height: 340px;
-  width: 1470px;
-
-}
-
-.blockLeft img,
-.blockRight img {
-  width: 620px;
-  height: auto;
-}
-
-.blockLeft {
-  justify-content: start;
-}
-
-.blockRight {
-  justify-content: end;
-}
-
-.blockLeft>div:first-child,
-.blockRight>div:last-child {
-  flex-shrink: 0;
-}
-
-.blockLeft>div:not(:first-child),
-.blockRight>div:not(:last-child) {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
-}
-
-.title {
-  font-size: 32px;
-  color: #9747FF;
-  font-weight: 700;
-}
-
-.subTitle {
-  font-size: 28px;
-  color: #70E61C;
-  font-weight: 400;
-}
-
-.subTitleContent {
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.SubTitleTop {
-  font-size: 16px;
-  font-weight: 400;
-  padding-bottom: 100px;
-}
-
-.buttonLive,
-.buttonGit {
-  height: 56px;
-  width: 152px;
-  font-size: 23px;
-  border-radius: 10px;
-  color: white;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.buttonLive:hover{
-  transform: scale(1.3);
-  background: none;
-  border: 1px solid #9747FF;
-}
-
-.buttonGit:hover{
-  background-color: #70E61C;
-  transform: scale(1.3);
-}
-.buttonDiv {
-  display: flex;
-  gap: 100px;
-  padding-top: 50px;
-}
-
-.buttonLive {
-  background-color: #9747FF;
-}
-
-.buttonGit {
-  background: none;
-  border: 1px solid #70E61C;
-}
-
-.polo2{
-  display: none;
-}
-@media screen and (max-width: 1480px){
-
-  .blockLeft,
-  .blockRight{
-    width: 1000px;
-    gap: 0px;
-    height: auto;
-    flex-direction: column;
+  .lineSmall {
+    height: 4px;
+    background-color: #9747FF;
+    width: 250px;
+    flex-shrink: 0;
 
   }
-  .polo2{
+
+  .portLine {
+    height: 4px;
+    background-color: #9747FF;
+    position: absolute;
+    left: calc(50% + 325px);
+    right: 0;
+    margin-left: 25px;
+  }
+
+  .portBody {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    background-image: url('/assets/img/32 Purple shadow portfolio.png');
+    background-repeat: no-repeat;
+    background-position: 50px 100px;
+    z-index: 1;
+    background-size: 40%;
+  }
+
+  .blockLeft,
+  .blockRight {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 20px;
+    height: 340px;
+    width: 1470px;
+
+  }
+
+  .blockLeft img,
+  .blockRight img {
+    width: 620px;
     height: auto;
-    width: 1000px;
-
   }
-  .blockRight,
-  .polo1{
-    display: none;
+
+  .blockLeft {
+    justify-content: start;
   }
-}
-@media screen and (max-width: 1080px){
 
-}
-.blockLeft,
-.blockRight{
-  width: 1000px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-    width: 750px;
-  
-}
+  .blockRight {
+    justify-content: end;
+  }
 
+  .blockLeft>div:first-child,
+  .blockRight>div:last-child {
+    flex-shrink: 0;
+  }
 
-.lineSmall{
-  width: 200px;
+  .blockLeft>div:not(:first-child),
+  .blockRight>div:not(:last-child) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
 
-}
-.portLine{
-  display: none;
-}
-.portTop{
-  justify-content:flex-start;
-}
+  .title {
+    font-size: 32px;
+    color: #9747FF;
+    font-weight: 700;
+  }
 
-@media screen and (max-width: 780px){
+  .subTitle {
+    font-size: 28px;
+    color: #70E61C;
+    font-weight: 400;
+  }
+
+  .subTitleContent {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .SubTitleTop {
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 100px;
+  }
+
   .buttonLive,
   .buttonGit {
-    height: 40px;
-    width: 90px;
-    font-size: 16px;
-   
+    height: 56px;
+    width: 152px;
+    font-size: 23px;
+    border-radius: 10px;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
-  .portBody{
-    width: 300px;
-  }
-  .buttonDiv{
-    gap: 20px;
-  }
-.lineSmall{
-  width: 50px;
-}
-.blockLeft img,
-.blockRight img{
-  width: 250px;
-}
-  .blockLeft ,
-.blockRight {
-  width: 250px;
 
-}
-.polo1{
-  display: none;
-}
-.polo2{
-  display: inline;
-}
-}
+  .buttonLive:hover {
+    transform: scale(1.3);
+    background: none;
+    border: 1px solid #9747FF;
+  }
+
+  .buttonGit:hover {
+    background-color: #70E61C;
+    transform: scale(1.3);
+  }
+
+  .buttonDiv {
+    display: flex;
+    gap: 100px;
+    padding-top: 50px;
+  }
+
+  .buttonLive {
+    background-color: #9747FF;
+  }
+
+  .buttonGit {
+    background: none;
+    border: 1px solid #70E61C;
+  }
+
+  .pollo2{
+    display: none;
+  }
+  
+  .pollo1{
+    display: flex;
+  }
+  
+  @media screen and (max-width: 1480px) {
+
+    .blockLeft,
+    .blockRight {
+      width: 1000px;
+      gap: 0px;
+      height: auto;
+      flex-direction: column;
+
+    }
+
+    .pollo2 {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      width: 1000px;
+
+    }
+
+  }
+  @media screen and (max-width: 1080px) {}
+
+  .blockLeft,
+  .blockRight {
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 750px;
+  }
+  .lineSmall {
+    width: 200px;
+  }
+  .portLine {
+    display: none;
+  }
+  .portTop {
+    justify-content: flex-start;
+  }
+  .blockRight,
+  .pollo1 {
+    display: none;
+  }
+
+  @media screen and (max-width: 780px) {
+
+    .buttonLive,
+    .buttonGit {
+      height: 40px;
+      width: 90px;
+      font-size: 16px;
+
+    }
+    .portTop {
+      font-size: 60px;
+    }
+    .portBody {
+      width: 300px;
+    }
+
+    .buttonDiv {
+      gap: 20px;
+    }
+
+    .lineSmall {
+      width: 50px;
+    }
+
+    .blockLeft img,
+    .blockRight img {
+      width: 250px;
+    }
+
+    .blockLeft,
+    .blockRight {
+      width: 250px;
+
+    }
+
+    .blockRight,
+    .pollo1 {
+      display: none;
+    }
+
+    .pollo2 {
+      display: inline;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .portTop {
+      font-size: 60px;
+    }
+  }
