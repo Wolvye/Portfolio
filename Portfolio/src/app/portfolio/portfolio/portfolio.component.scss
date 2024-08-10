@@ -44,7 +44,8 @@
     display: flex;
     align-items: center;
     gap: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    margin-top: 70px;
     height: 340px;
     width: 1470px;
 
@@ -60,9 +61,7 @@
     justify-content: start;
   }
 
-  .blockRight {
-    justify-content: end;
-  }
+
 
   .blockLeft>div:first-child,
   .blockRight>div:last-child {
@@ -98,6 +97,9 @@
     font-size: 16px;
     font-weight: 400;
     padding-bottom: 100px;
+    display: flex;
+    flex: 1;
+   
   }
 
   .buttonLive,
@@ -125,6 +127,7 @@
     display: flex;
     gap: 100px;
     padding-top: 50px;
+   
   }
 
   .buttonLive {
@@ -136,7 +139,9 @@
     border: 1px solid #70E61C;
   }
 
-
+  .blockRight {
+    justify-content: end;
+  }
 
   @media screen and (max-width: 1480px) {
 
@@ -148,9 +153,7 @@
       flex-direction: column;
     }
   }
-  .blockRight{
-    flex-direction: column-reverse;
-  }
+
 
   @media screen and (max-width: 1080px) {}
 
@@ -195,6 +198,7 @@
 
     .buttonDiv {
       gap: 20px;
+  
     }
 
     .lineSmall {
@@ -209,26 +213,30 @@
     .blockLeft,
     .blockRight {
       width: 250px;
-
     }
 
 
+
+   
     @media screen and (max-width: 400px) {
       .portTop {
         font-size: 60px;
         margin-top: 50px;
       }
+
       .portBody {
         width: 299px;
         padding-left: 25px;
       }
+
       .blockLeft img,
       .blockRight img {
         width: 250px;
       }
-      .lineSmall{
+
+      .lineSmall {
         display: none;
-        
+
       }
     }
   }
