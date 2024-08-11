@@ -9,9 +9,8 @@ import { FormsModule, NgForm } from '@angular/forms';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-http=inject(HttpClient);
-
-
+  http = inject(HttpClient);
+  mailTest = true;
   isChecked = false;
   isCheckedStandalone = false;
 
@@ -22,7 +21,7 @@ http=inject(HttpClient);
   }
 
 
-  mailTest = true;
+
 
   post = {
     endPoint: 'https://alain-soltau.de/sendMail.php',
@@ -36,6 +35,12 @@ http=inject(HttpClient);
   };
 
   onSubmit(ngForm: NgForm) {
+    if (!this.isChecked) {
+      alert('Bitte akzeptieren Sie die Datenschutzerklärung.');
+      return;
+    }else{
+      alert('Danke für die Mail. Ich werde mich so schnell es geht melden.')
+    }
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
@@ -53,4 +58,5 @@ http=inject(HttpClient);
       ngForm.resetForm();
     }
   }
+
 }

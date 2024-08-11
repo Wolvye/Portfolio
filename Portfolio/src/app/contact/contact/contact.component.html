@@ -45,7 +45,7 @@
         <p>Status: {{ isChecked ? 'Checked' : 'Unchecked' }}</p>
       </form>
 
-      <input class="contactButton" type="submit" value="Send message :-)">
+      <input class="contactButton" type="submit" [disabled]="!isChecked" value="Send message :-)">
 
     </form>
   </div>

@@ -177,7 +177,9 @@
   .portTop {
     justify-content: flex-start;
   }
-
+  .blockRight{
+    flex-direction: column-reverse;
+  }
   @media screen and (max-width: 780px) {
 
     .buttonLive,
@@ -185,7 +187,6 @@
       height: 40px;
       width: 90px;
       font-size: 16px;
-
     }
 
     .portTop {
@@ -198,7 +199,6 @@
 
     .buttonDiv {
       gap: 20px;
-  
     }
 
     .lineSmall {
@@ -214,9 +214,9 @@
     .blockRight {
       width: 250px;
     }
-
-
-
+    .blockRight{
+      flex-direction: column-reverse;
+    }
    
     @media screen and (max-width: 400px) {
       .portTop {
@@ -234,9 +234,18 @@
         width: 250px;
       }
 
+      .blockLeft,
+      .blockRight  {
+        margin-bottom: 15px;
+      }
       .lineSmall {
         display: none;
-
+      }
+      .blockRight{
+        flex-direction: column-reverse;
+      }
+      .SubTitleTop{
+        padding-bottom: 0px;
       }
     }
   }
