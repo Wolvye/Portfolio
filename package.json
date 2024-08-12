@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@ngx-translate/http-loader": "^8.0.0",
     "aos": "^2.3.4"
   }
 }

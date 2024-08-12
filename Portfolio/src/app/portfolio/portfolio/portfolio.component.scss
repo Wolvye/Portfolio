@@ -99,7 +99,7 @@
     padding-bottom: 100px;
     display: flex;
     flex: 1;
-   
+
   }
 
   .buttonLive,
@@ -127,7 +127,7 @@
     display: flex;
     gap: 100px;
     padding-top: 50px;
-   
+
   }
 
   .buttonLive {
@@ -177,9 +177,11 @@
   .portTop {
     justify-content: flex-start;
   }
-  .blockRight{
+
+  .blockRight {
     flex-direction: column-reverse;
   }
+
   @media screen and (max-width: 780px) {
 
     .buttonLive,
@@ -214,10 +216,11 @@
     .blockRight {
       width: 250px;
     }
-    .blockRight{
+
+    .blockRight {
       flex-direction: column-reverse;
     }
-   
+
     @media screen and (max-width: 400px) {
       .portTop {
         font-size: 60px;
@@ -235,16 +238,19 @@
       }
 
       .blockLeft,
-      .blockRight  {
+      .blockRight {
         margin-bottom: 15px;
       }
+
       .lineSmall {
         display: none;
       }
-      .blockRight{
+
+      .blockRight {
         flex-direction: column-reverse;
       }
-      .SubTitleTop{
+
+      .SubTitleTop {
         padding-bottom: 0px;
       }
     }

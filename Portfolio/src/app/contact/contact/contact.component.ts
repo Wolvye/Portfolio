@@ -21,8 +21,6 @@ export class ContactComponent {
   }
 
 
-
-
   post = {
     endPoint: 'https://alain-soltau.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
