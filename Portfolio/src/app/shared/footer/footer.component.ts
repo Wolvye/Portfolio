@@ -3,6 +3,7 @@ import { TranslationService } from '../../translation.service';
 import { TranslateModule } from '@ngx-translate/core';
 
 
+
 @Component({
   selector: 'app-footer',
   standalone: true,
@@ -12,6 +13,6 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class FooterComponent {
   translate = inject(TranslationService);
-Impressum: any;
+
 
 }
