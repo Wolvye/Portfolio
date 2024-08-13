@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../../translation.service';
 
 interface Friend {
   text: string;
@@ -8,17 +10,19 @@ interface Friend {
 @Component({
   selector: 'app-friends',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './friends.component.html',
   styleUrls: ['./friends.component.scss']
 })
 export class FriendsComponent {
+  translate = inject(TranslationService);
   // Deine bestehenden Deklarationen
   ozkanDE: Friend = {
     text: "Alain hat besonders durch sein Organisationstalent sowie seine Scrum und Kanban Kenntnisse einen wertvollen Beitrag zum Erfolg dieses Projektes beigetragen. <br> Seiner akribischen Herangehensweise beim Testen des Projektes, <br>verdanken wir die Entdeckung und Behebung von Bugs. Ich würde jederzeit gerne wieder mit Ihm zusammenarbeiten. Özkan Sarikaya",
     imgPath: './assets/img/ozkan.jpg'
   };
   
+
   ozkanENG: Friend = {
     text: "Alain made a valuable contribution to the success of this project, particularly with his organizational skills and his Scrum and Kanban knowledge. Thanks to his meticulous approach to testing the project, we were able to discover and fix bugs. I would be happy to work with him again at any time. Özkan Sarikaya",
     imgPath: './assets/img/ozkan.jpg'

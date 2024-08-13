@@ -141,6 +141,7 @@
 
   .blockRight {
     justify-content: end;
+    
   }
 
   @media screen and (max-width: 1480px) {
@@ -153,6 +154,7 @@
       flex-direction: column;
     }
   }
+
 
 
   @media screen and (max-width: 1080px) {}

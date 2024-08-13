@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { TranslateService } from '../../translate.service';
+import { TranslationService } from '../../translation.service';
 
 @Component({
   selector: 'app-hero',
@@ -10,5 +10,5 @@ import { TranslateService } from '../../translate.service';
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
-  translate = inject(TranslateService);
+  translate = inject(TranslationService);
 }

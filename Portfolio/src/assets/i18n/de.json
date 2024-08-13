@@ -1,4 +1,16 @@
 {
     "frontend": "Web_De",
-    "developer": "Entwickler"
+    "developer": "Entwickler",
+    "iAm":"Ich bin",
+    "meFirstPart":"Hallo, ich bin ein deutschsprachiger Junior Developer aus Hamburg. Ich bin begeistert von den unendlichen Möglichkeiten der IT, und spezialisiere mich auf die Erstellung visuell ansprechender und benutzerfreundlicher Webseiten und Anwendungen. Es macht mir Freude, innovative Ideen durch Code zum Leben zu erwecken.",
+    "meDis": "Hallo, ich bin ein deutschsprachiger Junior Developer aus Hamburg. Fasziniert von den Möglichkeiten der IT, entwickle ich ansprechende und benutzerfreundliche Webseiten und Anwendungen. Ich arbeite flexibel vor Ort in Hamburg oder remote, sowohl im Team als auch eigenständig, und liefere dabei stets hochwertige Ergebnisse mit klarer Kommunikation.",
+    "meDis2":"Ich bin aufgeschlossen und suche ständig nach neuen Herausforderungen, um mein Wissen und meine Fähigkeiten zu erweitern. Ich nutze jede Gelegenheit, um zu wachsen und freue mich immer darauf, mich beruflich weiterzuentwickeln.",
+    "meDis3":"In meinem Beruf ist Programmieren nicht nur das Schreiben von Code, sondern eine kreative Art, Probleme zu lösen. Ich bin stolz darauf, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen zu verwandeln. So helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken.",
+    "looking2":"Bist du an zusätzlichen Kompetenzen interessiert?",
+    "free":"Zögere nicht, mich zu kontaktieren. Ich freue mich darauf, weiterzuentwickeln.",
+    "get":"Setze dich gerne mit mir in Verbindung",
+    "skills":"Meine Fähigkeiten",
+    "exp": "Ich habe Erfahrung in der Entwicklung von Projekten mit verschiedenen Frontend- und Backend-Technologien sowie -Konzepten gesammelt.",
+
+
 }
