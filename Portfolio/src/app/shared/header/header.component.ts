@@ -21,4 +21,12 @@ export class HeaderComponent {
       this.isHidden = false;
     }
   }
+
+toggleVisibility2() {
+  if (this.isHidden == false) {
+    this.isHidden = true;
+  } else {
+    this.isHidden = false;
+  }
+}
 }

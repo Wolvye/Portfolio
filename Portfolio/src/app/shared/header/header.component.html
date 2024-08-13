@@ -10,8 +10,7 @@
     </nav>
 </div>
 <div [ngClass]="{'d-none': isHidden}">
-    <div class="btnMenu d-none">
-    
+    <div class="btnMenu"  (click)="toggleVisibility2()">
         <a class="btn2 transButton" href="#aboutMeTitle">About me</a>
         <a class="btn2 transButton" href="#skills">Skills</a>
         <a class="btn2 transButton" href="#portfolio">Portfolio</a>

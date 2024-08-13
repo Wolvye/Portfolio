@@ -42,17 +42,22 @@
     display: none;
 }
 
-.d-none{
+.d-none {
     display: none;
 }
-.btnMenu{display: none;}
 
-.transButton{
-  cursor: pointer; 
+.btnMenu {
+    display: none;
 }
-.transButton:hover{
+
+.transButton {
+    cursor: pointer;
+}
+
+.transButton:hover {
     color: #70E61C;
 }
+
 @media screen and (max-width: 1060px) {
     .btn {
         display: none;
@@ -64,9 +69,10 @@
         position: relative;
         margin-right: 15px;
     }
-    .burger:hover{
+
+    .burger:hover {
         cursor: pointer;
-        
+
     }
 
     .btnMenu {
@@ -84,20 +90,23 @@
         font-size: 70px;
         z-index: 999;
         gap: 50px;
-        >a{
+
+        >a {
             color: white;
             text-decoration: none;
         }
-        >a:hover{
+
+        >a:hover {
             cursor: pointer;
             color: #70E61C;
         }
-                
+
     }
 }
-@media screen and (max-width: 400px) {
- .btnMenu{
-    font-size: 40px;
 
- }   
+@media screen and (max-width: 400px) {
+    .btnMenu {
+        font-size: 40px;
+
+    }
 }
