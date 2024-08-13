@@ -2,18 +2,16 @@
   <div class="line">
 
   </div>
-  <div class="headlineContact">Contact</div>
+  <div class="headlineContact">{{'Contact'|translate}}</div>
 </div>
 
 <div class="contactBody" id="contact">
   <div class="contactHead">
     <div class="problem">Got a problem to solve?</div>
     <br>
-    <div class="problemContent"> Contact me through this form. I am interested in hearing
-      from you, <br>knowing your ideas, and contributing to your projects with my work.
-
+    <div class="problemContent"> {{'ideas'|translate}}
       <br>
-      <br>Need a Developer? Contact me!
+      <br>{{'dev'|translate}}
     </div>
   </div>
   <div class="contactBox">
@@ -29,7 +27,7 @@
         name="message" placeholder="Your message" style="height:200px"></textarea>
 
       @if(!message.valid && message.touched && !message.disabled){
-      <span>Please enter a message</span>
+      <span>{{'dev'|translate}}</span>
       }
       <form>
         <label class="checkBox-container">
@@ -37,8 +35,7 @@
             class="checkBox-container">
             <input type="checkbox" [(ngModel)]="isChecked" name="myCheckbox" class="checkBox">
             <span class="checkmark"></span>
-            <div class="checkBoxText">I’ve read the privacy policy and agree to the processing of my data as
-              outlined.</div>
+            <div class="checkBoxText">{{'pp'|translate}}</div>
           </label>
 
         </label>

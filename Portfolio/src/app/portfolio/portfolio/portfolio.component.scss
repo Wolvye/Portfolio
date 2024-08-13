@@ -141,8 +141,10 @@
 
   .blockRight {
     justify-content: end;
-    
+
   }
+
+ 
 
   @media screen and (max-width: 1480px) {
 
@@ -155,33 +157,36 @@
     }
   }
 
-
-
-  @media screen and (max-width: 1080px) {}
-
-  .blockLeft,
-  .blockRight {
-    width: 1000px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 750px;
-  }
-
-  .lineSmall {
-    width: 200px;
-  }
-
-  .portLine {
-    display: none;
-  }
-
-  .portTop {
-    justify-content: flex-start;
-  }
-
   .blockRight {
     flex-direction: column-reverse;
+  }
+
+  @media screen and (max-width: 1080px) {
+
+    .blockLeft,
+    .blockRight {
+      width: 1000px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 750px;
+    }
+
+    .lineSmall {
+      width: 200px;
+    }
+
+    .portLine {
+      display: none;
+    }
+
+    .portTop {
+      justify-content: flex-start;
+    }
+
+    .blockRight {
+      flex-direction: column-reverse;
+    }
   }
 
   @media screen and (max-width: 780px) {

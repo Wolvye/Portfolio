@@ -1,20 +1,26 @@
 {
-    "frontend":"Web_De",
-    "developer":"Developer",
-    "iAm":"I am",
+    "frontend": "Web_De",
+    "developer": "Developer",
+    "iAm": "I am",
     "meFirstPart": "Hi, I’m a German-speaking Junior Developer based in Hamburg.Passionate about the endless possibilities in IT, I specialize in creating visually appealing and user-friendly websites and applications.I thrive on bringing innovative ideas to life through code.",
-    "meDis":" I am adaptable to various working environments and can work efficiently both on-site in Hamburg and remotely. Whether collaborating with a team   in person or working independently from a remote location,  I consistently deliver high-quality results and maintain strong communication.",
-    "meDis2":"I am open-minded and continually seek personal challenges to enhance my knowledge and skills. I thrive on opportunities for growth and am always eager to learn and develop professionally.",
-    "meDis3":" In my profession, programming isn't just about writing code; it's a creative form of problem-solving.  I take pride in my ability to distill complex technical challenges into simple, user-friendly solutions. This way, I help you achieve your goals and bring your visions to life.",
-    "looking2":"Looking for another skills?",
-    "free":"Feel free to contact me. I look forward to expanding ",
-    "get":"Get in touch",
-    "skills":"My skills",
-    "exp":"I have gained experience in building projects with different frontend and backend technologies and concepts.",
-
-
-
-
-
+    "meDis": " I am adaptable to various working environments and can work efficiently both on-site in Hamburg and remotely. Whether collaborating with a team   in person or working independently from a remote location,  I consistently deliver high-quality results and maintain strong communication.",
+    "meDis2": "I am open-minded and continually seek personal challenges to enhance my knowledge and skills. I thrive on opportunities for growth and am always eager to learn and develop professionally.",
+    "meDis3": " In my profession, programming isn't just about writing code; it's a creative form of problem-solving.  I take pride in my ability to distill complex technical challenges into simple, user-friendly solutions. This way, I help you achieve your goals and bring your visions to life.",
+    "looking2": "Looking for another skills?",
+    "free": "Feel free to contact me. I look forward to expanding ",
+    "get": "Get in touch",
+    "skills": "My skills",
+    "exp": "I have gained experience in building projects with different frontend and backend technologies and concepts.",
+    "SubTitleTop": "Explore a selection of my work here - Interact with projects to see my skills in action",
+    "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "pollo": "A simple Jump and Run game based on an object-oriented approach. Help Gustavo to find coins and Tabasco bottles to fight against the Killerchicken.",
+    "pokedex": "The Pokedex API in JavaScript enables CRUD operations (Create, Read, Update, Delete) for Pokémon data. It includes the creation of RESTful endpoints, efficient data management, data validation, and error handling.",
+    "alain": "Alain made a valuable contribution to the success of this project, particularly with his organizational skills and his Scrum and Kanban knowledge. Thanks to his meticulous approach to testing the project, we were able to discover and fix bugs. I would be happy to work with him again at any time. Özkan Sarikaya",
+    "contact": "Contact",
+    "solve":"Got a problem to solve?",
+    "ideas":"Contact me through this form. I am interested in hearing from you, knowing your ideas, and contributing to your projects with my work.",
+    "dev":"Need a Developer? Contact me!",
+    "enter":"Please enter a message",
+    "pp":"I’ve read the privacy policy and agree to the processing of my data as outlined"
 
 }
