@@ -10,10 +10,11 @@ import { ContactComponent } from "./contact/contact/contact.component";
 import { PortfolioComponent } from './portfolio/portfolio/portfolio.component';
 import { FriendsComponent } from './friends/friends/friends.component';
 import AOS from 'aos';
+import { WrapperComponent } from "./wrapper/wrapper.component";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, FriendsComponent, ContactComponent, PortfolioComponent, MySkillsComponent, AboutMeComponent, RouterOutlet, FooterComponent, HeaderComponent, HeroComponent, MySkillsComponent, ContactComponent],
+  imports: [CommonModule, FriendsComponent, ContactComponent, PortfolioComponent, MySkillsComponent, AboutMeComponent, RouterOutlet, FooterComponent, HeaderComponent, HeroComponent, MySkillsComponent, ContactComponent, WrapperComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
