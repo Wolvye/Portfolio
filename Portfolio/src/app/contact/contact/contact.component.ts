@@ -13,9 +13,9 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class ContactComponent {
   http = inject(HttpClient);
-  mailTest = true;
-  isChecked = false;
-  isCheckedStandalone = false;
+  mailTest = false;
+  isChecked = true;
+  isCheckedStandalone = true;
   translate = inject(TranslationService);
 
   contactData = {
@@ -47,6 +47,7 @@ export class ContactComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
+            console.log("SERVER-GESENDET!");
 
             ngForm.resetForm();
           },
@@ -56,7 +57,7 @@ export class ContactComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
+      console.log("GESENDET!");
       ngForm.resetForm();
     }
   }

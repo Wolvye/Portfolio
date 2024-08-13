@@ -28,7 +28,7 @@
       @if(!message.valid && message.touched && !message.disabled){
       <span>{{'dev'|translate}}</span>
       }
-      <form>
+      <div>
         <label class="checkBox-container">
           <input type="checkbox" [(ngModel)]="isChecked" name="myCheckbox" class="checkBox"><label
             class="checkBox-container">
@@ -36,13 +36,10 @@
             <span class="checkmark"></span>
             <div class="checkBoxText">{{'pp'|translate}}</div>
           </label>
-
         </label>
-        <p>Status: {{ isChecked ? 'Checked' : 'Unchecked' }}</p>
-      </form>
-
+        <!-- <p>Status: {{ isChecked ? 'Checked' : 'Unchecked' }}</p> -->
+      </div>
       <input class="contactButton" type="submit" [disabled]="!isChecked" value="Send message :-)">
-
     </form>
   </div>
 </div>

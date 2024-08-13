@@ -12,5 +12,6 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class FooterComponent {
   translate = inject(TranslationService);
+Impressum: any;
 
 }
