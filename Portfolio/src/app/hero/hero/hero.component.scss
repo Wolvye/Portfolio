@@ -9,8 +9,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 3;
-
+    background-blend-mode:  #141D2F;
 }
+
+
 
 .body {
     display: flex;
@@ -21,11 +23,13 @@
 .pink {
     z-index: 1;
     margin-left: 150px;
+
 }
 
 .purple {
     z-index: 1;
     position: relative;
+
 }
 
 .mePic {
@@ -48,6 +52,7 @@
     background-repeat: no-repeat, no-repeat;
     background-position: -0px 0px, 10px 10px;
 
+
 }
 
 .image-container img {
@@ -56,6 +61,7 @@
     object-fit: cover;
     position: absolute;
 
+
 }
 
 .heroName {
@@ -63,6 +69,7 @@
     align-items: center;
     justify-content: center;
     z-index: 5;
+    overflow: hidden;
 }
 
 .heroIAm {
@@ -150,11 +157,13 @@
     .image-container img {
         width: 400px;
     }
+
     .heroBackground {
         background-position: left 100px;
-       
+
     }
-    .image-container{
+
+    .image-container {
         height: calc(100vh - 400px);
     }
 }

@@ -22,7 +22,9 @@
 .bulletPoints {
     display: flex;
 }
-
+.btn{
+    padding: 3px;
+}
 .bulletPoints>a {
     margin-right: 20px;
     font-size: 24px;
@@ -41,6 +43,9 @@
     color: white;
 }
 
+.alain img{
+    height: 100px;
+}
 .alain:hover {
     cursor: pointer;
     color: #70E61C;
@@ -69,6 +74,7 @@
 @media screen and (max-width: 1060px) {
     .btn {
         display: none;
+        
     }
 
     .burger {

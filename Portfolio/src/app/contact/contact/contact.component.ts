@@ -14,7 +14,7 @@ import { TranslateModule } from '@ngx-translate/core';
 export class ContactComponent {
   http = inject(HttpClient);
   mailTest = false;
-  isChecked = true;
+  isChecked = false;
   isCheckedStandalone = true;
   translate = inject(TranslationService);
 
