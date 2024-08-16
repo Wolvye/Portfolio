@@ -46,7 +46,7 @@ popupMessage: any;
     }else{
       alert('Danke für die Mail. Ich werde mich so schnell es geht melden.')
     }
-    if (ngForm.submitted && ngForm.valid && !this.mailTest) {
+    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {

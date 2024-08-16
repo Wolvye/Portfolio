@@ -17,14 +17,15 @@
 
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
-      <input class="contactName" [(ngModel)]="contactData.name" type="text" id="name" name="name"  placeholder="Your name">
+      <input class="contactName" [(ngModel)]="contactData.name" type="text" id="name" name="name"
+        placeholder="Your name">
 
       <input class="contactMail" [(ngModel)]="contactData.email" type="email" id="email" name="email"
-        placeholder="Your email" required  pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+        placeholder="Your email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
 
       <textarea #message="ngModel" class="contactMessage" [(ngModel)]="contactData.message" minlength="4" id="message"
         name="message" placeholder="Your message" style="height:200px"></textarea>
-
+        
       @if(!message.valid && message.touched && !message.disabled){
       <span>Please enter message</span>
       }
