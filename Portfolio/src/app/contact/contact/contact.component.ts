@@ -3,11 +3,12 @@ import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslationService } from '../../translation.service';
 import { TranslateModule } from '@ngx-translate/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule,TranslateModule],
+  imports: [FormsModule,TranslateModule,ReactiveFormsModule,],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -35,6 +36,8 @@ export class ContactComponent {
       },
     },
   };
+isPopupVisible: any;
+popupMessage: any;
 
   onSubmit(ngForm: NgForm) {
     if (!this.isChecked) {

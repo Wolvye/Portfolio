@@ -121,6 +121,22 @@ button {
 .d-none{
     display: none;
 }
+.textInText{
+    max-width: 80%;
+}
+@media screen and (min-width:2000px){
+    .out{
+        margin: 0 auto;
+        padding-left: 11%;
+    }
+    .gap{
+        width: 10%;
+    }
+    .textInText{
+        max-width: 60%;
+    }
+
+}
 
 @media screen and (max-width: 1080px){
     .skillBody{

@@ -144,7 +144,19 @@
 .checkBoxText {
     margin-left: 30px;
 }
-
+@media screen and (min-width: 2000px) {
+    .contactBody{
+        margin: 0 auto;
+        padding-left: 11%;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .contactBody{
+        margin: 0 auto;
+        padding-left: 11%;
+        padding-right: 11%;
+    }
+}
 @media screen and (max-width: 1080px) {
     .contactBody {
         gap: 0;

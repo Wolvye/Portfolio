@@ -14,10 +14,9 @@
   padding-left: 37px;
   background-image: url("/assets/img/30. Purple shadow about me (1).png");
   background-repeat: no-repeat, no-repeat;
-  background-position: 1200px -10px;
-  background-size: 30%;
+  background-position: 1200px 60px;
+  background-size: 20%;
   position: relative;
-  z-index: 150;
 }
 
 .aboutMeTitle {
@@ -59,7 +58,18 @@
 .meFirstPart {
   margin-bottom: 20px;
 }
-
+.gap{
+  width: 10%;
+}
+@media screen and (min-width: 2000px) {
+  .out{
+    padding-left: 11%;
+ 
+  }
+  .gap{
+    width: 15%;
+  }
+}
 @media screen and (max-width: 1080px) {
   .line {
     width: auto;

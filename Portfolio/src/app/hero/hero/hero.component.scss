@@ -7,12 +7,10 @@
     background-image: url('/assets/img/28. Hero Background.png');
     background-position: left 200px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 125%;
     z-index: 3;
     background-blend-mode:  #141D2F;
 }
-
-
 
 .body {
     display: flex;
@@ -29,7 +27,6 @@
 .purple {
     z-index: 1;
     position: relative;
-
 }
 
 .mePic {
@@ -136,6 +133,21 @@
     align-items: center;
     width: 1280px;
     height: 970px;
+}
+@media screen and (min-width: 1440px) {
+    .body{
+        margin: 0 auto;
+    }
+    .heroSozial{
+        padding-left: 12%;
+        position: relative;
+    }
+    .heroLine{
+        padding: 0;
+        width: 12%;
+        left: 0;
+        position: absolute;
+    }
 }
 
 @media screen and (max-width: 1060px) {

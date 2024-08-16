@@ -6,7 +6,7 @@
 
 <div class="contactBody" id="contact">
   <div class="contactHead">
-    <div class="problem">{{'problem'|translate}}</div>
+    <div class="problem">{{'solve'|translate}}</div>
     <br>
     <div class="problemContent"> {{'ideas'|translate}}
       <br>
@@ -14,6 +14,7 @@
     </div>
   </div>
   <div class="contactBox">
+
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
       <input class="contactName" [(ngModel)]="contactData.name" type="text" id="name" name="name"  placeholder="Your name">
