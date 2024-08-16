@@ -22,6 +22,12 @@
     "dev":"Need a Developer? Contact me!",
     "enter":"Please enter a message",
     "pp":"I’ve read the privacy policy and agree to the processing of my data as outlined",
-    "aboutMe":"About me"
-
+    "aboutMe":"About me",
+    "imprint":"Imprint",
+    "owner":"Website Owner:",
+    "info":"Contact Information:",
+    "liability":"Liability for Content:",
+    "liaContent":"The contents of our pages have been created with the utmost care. However, we cannot guarantee the contents' accuracy, completeness, or topicality. According to statutory provisions, we are furthermore responsible for our content on these web pages. In this context, please note that we are not obliged to monitor transmitted or saved information of third parties or investigate circumstances pointing to illegal activity.",
+    "copyright":"Copyright Notice:",
+    "copyContent":" The content and works provided on these web pages are governed by the copyright laws of the United States. Duplication, processing, distribution, or any form of commercialization of such material beyond the scope of the copyright law shall require the prior written consent of its respective author or creator."
 }
