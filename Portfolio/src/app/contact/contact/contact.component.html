@@ -16,7 +16,7 @@
   <div class="contactBox">
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
-      <input class="contactName" [(ngModel)]="contactData.name" type="text" id="name" name="name" required placeholder="Your name">
+      <input class="contactName" [(ngModel)]="contactData.name" type="text" id="name" name="name"  placeholder="Your name">
 
       <input class="contactMail" [(ngModel)]="contactData.email" type="email" id="email" name="email"
         placeholder="Your email" required  pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">

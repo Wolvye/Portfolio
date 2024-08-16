@@ -2,9 +2,8 @@ import { Component, inject } from '@angular/core';
 import { TranslationService } from '../../translation.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { RouterLink, RouterModule } from '@angular/router';
-import { Router } from '@angular/router';
-
-
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
 
 @Component({
@@ -21,11 +20,16 @@ export class FooterComponent {
   router=inject(Router);
 
   scrollToTop(): void {
-    this.router.navigate(['/imprint']);
-      window.scrollTo({
-         top: 0,
-         left: 0,
-         behavior: 'smooth' 
-        });
-      }
+    this.router.navigate(['/imprint']).then(() => {
+      window.scrollTo(0, 0);
+    });
+  }
+
+  constructor() {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      window.scrollTo(0, 0);
+    });
+  }
 }
