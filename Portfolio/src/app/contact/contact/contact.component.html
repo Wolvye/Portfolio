@@ -17,8 +17,8 @@
 
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
-      <input #name="ngModel" class="contactName" [(ngModel)]="contactData.name" type="text" id="name" name="name" minlength="3"
-        placeholder="Your name">
+      <input #name="ngModel" class="contactName" [(ngModel)]="contactData.name" type="text" id="name" name="name"
+        minlength="3" placeholder="Your name">
 
       <input #email="ngModel" class="contactMail" [(ngModel)]="contactData.email" type="email" id="email" name="email"
         placeholder="Your email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
@@ -43,7 +43,9 @@
             class="checkBox-container">
             <input type="checkbox" [(ngModel)]="isChecked" name="myCheckbox" class="checkBox">
             <span class="checkmark"></span>
-            <div class="checkBoxText">{{'pp'|translate}}</div>
+            <div class="checkBoxText">{{'pp'|translate}}
+              <div class="ppText" (click)="scrollToTop()">{{'pp3'|translate}}</div> {{'pp2'|translate}}
+            </div>
           </label>
         </label>
         <!-- <p>Status: {{ isChecked ? 'Checked' : 'Unchecked' }}</p> -->
