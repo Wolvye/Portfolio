@@ -26,8 +26,12 @@
         name="message" placeholder="Your message" style="height:200px"></textarea>
 
       @if(!message.valid && message.touched && !message.disabled){
-      <span>{{'dev'|translate}}</span>
+      <span>Please enter message</span>
       }
+
+
+
+
       <div>
         <label class="checkBox-container">
           <input type="checkbox" [(ngModel)]="isChecked" name="myCheckbox" class="checkBox"><label
