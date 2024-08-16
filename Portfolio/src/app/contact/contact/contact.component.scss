@@ -9,7 +9,15 @@
     background-size: 30%;
     background-position: -50px;
 }
-
+.SpanBox{
+    color: red;
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 .contactHead {
     margin-bottom: 450px;
 }
