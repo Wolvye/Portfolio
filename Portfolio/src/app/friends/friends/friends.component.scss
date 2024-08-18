@@ -125,13 +125,17 @@
     }
     .friendTextInner{
       font-size: 12px;
+      width: 380px;
+    }
+    .lineText{
+      width: 320px;
     }
     .friendPic img{
       height: 300px;
       width: 300px;
     }
   }
-  @media screen and (max-width: 650px){
+  @media screen and (max-width: 450px){
     .friendText{
       height: 200px;
       width: 330px;
@@ -142,5 +146,13 @@
     }
     .friendTextAndPic{
       gap: 50px;
+    }
+    .friendTextInner{
+      font-size: 12px;
+      width: 300px;
+    }
+    .lineText{
+      width: 260px;
+    
     }
   }

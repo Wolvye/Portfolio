@@ -24,6 +24,10 @@ export class FooterComponent {
       window.scrollTo(0, 0);
     });
   }
+  scrollToTop2(): void {
+      window.scrollTo(0, 0);
+    }
+  
 
   constructor() {
     this.router.events.pipe(
