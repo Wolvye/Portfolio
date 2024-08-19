@@ -44,7 +44,7 @@
             <input type="checkbox" [(ngModel)]="isChecked" name="myCheckbox" class="checkBox">
             <span class="checkmark"></span>
             <div class="checkBoxText">{{'pp'|translate}}
-              <div class="ppText" (click)="scrollToTop()">{{'pp3'|translate}}</div> {{'pp2'|translate}}
+              <div class="ppText"> <a routerLink="/imprint">{{'pp3'|translate}}</a></div> {{'pp2'|translate}}
             </div>
           </label>
         </label>

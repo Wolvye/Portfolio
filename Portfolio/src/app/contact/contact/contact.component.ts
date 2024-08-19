@@ -68,20 +68,20 @@ export class ContactComponent {
     }
   }
 
-  
-  scrollToTop(): void {
-    this.router.navigate(['/imprint']).then(() => {
-      window.scrollTo(0, 0);
-    });
-  }
-
-  constructor() {
-    this.router.events.pipe(
-      filter(event => event instanceof NavigationEnd)
-    ).subscribe(() => {
-      window.scrollTo(0, 0);
-    });
-  }
 }
+  // scrollToTop(): void {
+  //   this.router.navigate(['/imprint']).then(() => {
+  //     window.scrollTo(0, 0);
+  //   });
+  // }
+
+  // constructor() {
+  //   this.router.events.pipe(
+  //     filter(event => event instanceof NavigationEnd)
+  //   ).subscribe(() => {
+  //     window.scrollTo(0, 0);
+  //   });
+  // }
+
 
 

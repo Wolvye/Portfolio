@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { TranslationService } from '../translation.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
@@ -13,5 +13,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 })
 export class ImprintComponent {
   translate = inject(TranslationService);
-
+  ngOnInit(){
+  window.scrollTo(0, 0);
+  }
 }
