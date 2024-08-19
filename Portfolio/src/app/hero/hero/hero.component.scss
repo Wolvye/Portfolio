@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     background-size: 100% 125%;
     z-index: 3;
-    background-blend-mode:  #141D2F;
+    background-blend-mode: #141D2F;
 }
 
 .body {
@@ -104,7 +104,11 @@
 }
 
 .heroLine {
-    width: 100px;
+
+    position: absolute;
+    right: calc(50% + 525px);
+    left: 0;
+    width: 30%;
     height: 1px;
     background-color: #9747FF;
 }
@@ -116,6 +120,7 @@
     left: 0;
     z-index: 5;
     position: relative;
+    padding-left: 30%
 }
 
 .heroSozial img {
@@ -134,15 +139,32 @@
     width: 1280px;
     height: 970px;
 }
-@media screen and (min-width: 1440px) {
-    .body{
+
+@media screen and (min-width: 2000px) {
+    .heroSozial {
+        padding-left: 30%
+    }
+
+    .heroLine {
+        position: absolute;
+        right: calc(50% + 525px);
+        left: 0;
+        width: 30%;
+    }
+}
+
+
+@media screen and (max-width: 1440px) {
+    .body {
         margin: 0 auto;
     }
-    .heroSozial{
+
+    .heroSozial {
         padding-left: 12%;
         position: relative;
     }
-    .heroLine{
+
+    .heroLine {
         padding: 0;
         width: 12%;
         left: 0;
