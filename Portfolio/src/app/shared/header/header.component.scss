@@ -141,10 +141,19 @@
 @media screen and (max-width: 400px) {
     .btnMenu {
         font-size: 20px;
+        gap: 5px;
 
     }
 
     .transButton {
         font-size: 20px;
     }
+    .bulletPoints img{
+         height: 25px;
+        width: 25px;
+    }
+    .bulletPoints {
+        gap: 5px;
+    }
+ 
 }
