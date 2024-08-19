@@ -77,10 +77,9 @@ button {
 }
 
 .looking,
-.looking2
-{
-font-size: 32px;
-font-weight: 700;
+.looking2 {
+    font-size: 32px;
+    font-weight: 700;
 }
 
 .textInText,
@@ -162,57 +161,68 @@ font-weight: 700;
         right: 0;
         width: 500%;
     }
+}
 
 
-
-    @media screen and (max-width: 1080px) {
-        .skillBody {
-            display: flex;
-            flex-direction: column-reverse;
-        }
-
-        .smallText {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        .looking,
-        .textInText,
-        .buttonGet {
-            display: none;
-        }
+@media screen and (max-width: 1080px) {
+    .skillBody {
+        display: flex;
+        flex-direction: column-reverse;
     }
 
-    @media screen and (max-width: 630px) {
-        .mySkills {
-            font-size: 60px;
-        }
+    .smallText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
-    @media screen and (max-width: 400px) {
-        .mySkills {
-            font-size: 60px;
-        }
+    .looking,
+    .textInText,
+    .buttonGet {
+        display: none;
+    }
+}
 
-        .line {
-            display: none;
-        }
+@media screen and (max-width: 780px) {
+    .skillBody {
+        display: flex;
+        align-items: flex-start;
+        padding-top: 100px;
+        flex-direction: column-reverse;
+        gap: 25px;
+    }
 
-        .MySkillWithLine {
-            width: 300px;
-            align-items: center;
-            justify-content: center;
-        }
+   
+}
 
-        .allImg img {
-            height: 40px;
-            width: 40px;
-        }
+@media screen and (max-width: 630px) {
+    .mySkills {
+        font-size: 60px;
+    }
+}
 
-        .allImg {
-            gap: 2px;
-        }
+@media screen and (max-width: 400px) {
+    .mySkills {
+        font-size: 60px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .MySkillWithLine {
+        width: 300px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .allImg img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .allImg {
+        gap: 2px;
     }
 }

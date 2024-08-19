@@ -154,12 +154,13 @@
       height: auto;
       flex-direction: column;
     }
+
     .blockRight {
       flex-direction: column-reverse;
     }
   }
 
- 
+
 
   @media screen and (max-width: 1080px) {
 
@@ -205,6 +206,7 @@
     // .portBody {
     //   width: 700px;
     // }
+    
 
     .buttonDiv {
       gap: 20px;
