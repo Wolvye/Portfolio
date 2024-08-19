@@ -35,7 +35,8 @@
 .footerTitle a {
     font-size: 20px;
 }
-.footerCopyR{
+
+.footerCopyR {
     font-size: 28px;
 }
 
@@ -51,7 +52,7 @@
 
 .heroSozial img {
     margin: 20px;
-    transition: transform 0.3s ease-in-out; 
+    transition: transform 0.3s ease-in-out;
 }
 
 .heroSozial img:hover {
@@ -59,29 +60,47 @@
 }
 
 .impressum,
-.impressum2{
+.impressum2 {
     font-size: 32px;
 }
-.impressum2{
+
+.impressum2 {
     display: none;
 }
-@media screen and (max-width: 700px){
-    .footerContent{
+
+@media screen and (min-width: 2000px) {
+    .footerTitle {
+        padding-left: 25%;
+
+    }
+    .heroSozial{
+        margin-right: 5%;
+    }
+
+
+}
+
+@media screen and (max-width: 700px) {
+    .footerContent {
         flex-direction: column;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .impressum{
+
+    .impressum {
         display: none;
     }
-    .impressum2{
+
+    .impressum2 {
         display: inline;
     }
-    .footerTitle{
+
+    .footerTitle {
         padding-left: 0;
     }
-    .footerImg{
+
+    .footerImg {
         padding-right: 0;
         gap: 10px;
     }

@@ -1,158 +1,189 @@
 .friendPic img {
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
-    border: 5px solid #9747FF;
-    object-fit: cover;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  border: 5px solid #9747FF;
+  object-fit: cover;
 }
 
 .friendTextAndPic {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 150px;
-    background-image: url('/assets/img/33. Purple shadow Footer.png');
-    background-repeat: no-repeat;
-    background-position: 1000px 0px;
-    background-size: 500px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 150px;
+  background-image: url('/assets/img/33. Purple shadow Footer.png');
+  background-repeat: no-repeat;
+  background-position: 1000px 0px;
+  background-size: 500px;
 }
 
 .friendText {
-    border: 4px solid #70E61C;
-    border-radius: 32px;
-    height: 450px;
-    width: 851px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  border: 4px solid #70E61C;
+  border-radius: 32px;
+  height: 450px;
+  width: 851px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .line {
-    height: 4px;
-    background-color: #9747FF;
-    width: 150px;
+  height: 4px;
+  background-color: #9747FF;
+  width: 150px;
 }
 
 .friendPic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .break {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .lineText {
-    display: flex;
-    background-color: #9747FF;
-    height: 2px;
-    width: 400px;
+  display: flex;
+  background-color: #9747FF;
+  height: 2px;
+  width: 400px;
 }
 
 .friendTextInner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-size: 20px;
-    font-weight: 400;
-    padding-left: 3%;
-    padding-right: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .Arrows {
-    position: relative;
-    display: inline-block;
-  
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-      transition: opacity 0.3s ease;
-    }
-  
-    .hover-image {
-      position: absolute;
-      top: 0;
-      left: 0;
+  position: relative;
+  display: inline-block;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+  }
+
+  .hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+
+  &:hover {
+    .default-image {
       opacity: 0;
     }
-  
-    &:hover {
-      .default-image {
-        opacity: 0;
-      }
-      .hover-image {
-        opacity: 1;
-      }
+
+    .hover-image {
+      opacity: 1;
     }
   }
-  .ArrowBox{
+}
+
+.ArrowBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 25px;
+}
+
+@media screen and (min-width: 2000px) {
+  .out {
+    max-width: 2000px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin-top: 25px;
+    display: block;
+  }
+  .line{
+   
+    position: absolute;
+    left: calc(80% + 375px);
+    right: 0;
+    margin-left: 25px;
+    width: 500%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .friendTextAndPic {
+    flex-direction: column-reverse;
   }
 
- 
+  .line {
+    display: none;
+  }
 
-  @media screen and (max-width: 1080px){
-    .friendTextAndPic{
-      flex-direction: column-reverse;
-    }
-    .line{
-      display: none;
-    }
-    .friendText{
-      height: 400px;
-      width: 750px;
-    }
+  .friendText {
+    height: 400px;
+    width: 750px;
   }
-  @media screen and (max-width: 780px){
-    .friendText{
-      height: 300px;
-      width: 550px;
-    }
+}
+
+@media screen and (max-width: 780px) {
+  .friendText {
+    height: 300px;
+    width: 550px;
   }
-  @media screen and (max-width: 650px){
-    .friendText{
-      height: 200px;
-      width: 400px;
-    }
-    .friendTextInner{
-      font-size: 12px;
-      width: 380px;
-    }
-    .lineText{
-      width: 320px;
-    }
-    .friendPic img{
-      height: 300px;
-      width: 300px;
-    }
+}
+
+@media screen and (max-width: 650px) {
+  .friendText {
+    height: 200px;
+    width: 400px;
   }
-  @media screen and (max-width: 450px){
-    .friendText{
-      height: 200px;
-      width: 330px;
-    }
-    .friendPic img{
-      height: 280px;
-      width: 280px;
-    }
-    .friendTextAndPic{
-      gap: 50px;
-    }
-    .friendTextInner{
-      font-size: 12px;
-      width: 300px;
-    }
-    .lineText{
-      width: 260px;
-    
-    }
+
+  .friendTextInner {
+    font-size: 12px;
+    width: 380px;
   }
+
+  .lineText {
+    width: 320px;
+  }
+
+  .friendPic img {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .friendText {
+    height: 200px;
+    width: 330px;
+  }
+
+  .friendPic img {
+    height: 280px;
+    width: 280px;
+  }
+
+  .friendTextAndPic {
+    gap: 50px;
+  }
+
+  .friendTextInner {
+    font-size: 12px;
+    width: 300px;
+  }
+
+  .lineText {
+    width: 260px;
+
+  }
+}

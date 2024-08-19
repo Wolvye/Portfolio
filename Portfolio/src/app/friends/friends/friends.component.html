@@ -1,29 +1,31 @@
-<div class="friendTextAndPic" data-aos="fade-right">
-    <div class="friendText">
-        <div class="friendTextInner">
-            @if (translate.english) {
-            {{ this.testimonials[currentIndex].text }}
-            }
-            @else {
-            {{ this.testimonials[currentIndex].deutsch }}
-            }
-            <div class="break">
-                <div class="lineText"></div>
-                {{ this.testimonials[currentIndex].person }}
+<div class="out">
+    <div class="friendTextAndPic" data-aos="fade-right">
+        <div class="friendText">
+            <div class="friendTextInner">
+                @if (translate.english) {
+                {{ this.testimonials[currentIndex].text }}
+                }
+                @else {
+                {{ this.testimonials[currentIndex].deutsch }}
+                }
+                <div class="break">
+                    <div class="lineText"></div>
+                    {{ this.testimonials[currentIndex].person }}
+                </div>
             </div>
         </div>
+        <div class="friendPic"><img [src]="testimonials[currentIndex].imgPath" alt="">
+            <div class="line"></div>
+        </div>
     </div>
-    <div class="friendPic"><img [src]="testimonials[currentIndex].imgPath" alt="">
-        <div class="line"></div>
-    </div>
-</div>
-<div class="ArrowBox">
-    <div class="Arrows">
-        <img src="./assets/img/left.png" (click)="prevFriend()" class="buttonLeft default-image crusor">
-        <img src="./assets/img/bigLeft.png" (click)="prevFriend()" class="buttonLeft hover-image crusor">
-    </div>
-    <div class="Arrows">
-        <img src="./assets/img/right.png" (click)="nextFriend()" class="buttonRight default-image crusor">
-        <img src="./assets/img/bigRight.png" (click)="nextFriend()" class="buttonRight hover-image crusor">
+    <div class="ArrowBox">
+        <div class="Arrows">
+            <img src="./assets/img/left.png" (click)="prevFriend()" class="buttonLeft default-image crusor">
+            <img src="./assets/img/bigLeft.png" (click)="prevFriend()" class="buttonLeft hover-image crusor">
+        </div>
+        <div class="Arrows">
+            <img src="./assets/img/right.png" (click)="nextFriend()" class="buttonRight default-image crusor">
+            <img src="./assets/img/bigRight.png" (click)="nextFriend()" class="buttonRight hover-image crusor">
+        </div>
     </div>
 </div>

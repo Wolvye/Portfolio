@@ -61,14 +61,28 @@
 .gap{
   width: 10%;
 }
+
+
 @media screen and (min-width: 2000px) {
   .out{
-    padding-left: 11%;
+   
+    max-width: 2000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  
   }
   .gap{
     width: 15%;
   }
+  .line{
+    position: absolute;
+    left: calc(50% + 225px);
+    right: 0;
+    width: 500%;
+  }
+  
 }
 @media screen and (max-width: 1080px) {
   .line {
